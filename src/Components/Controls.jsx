@@ -60,6 +60,7 @@ export default function Controls({game, setGame}){
             </div>
             <button 
                 onClick={handleNewGame}
+                disabled={!game.over}
                 className="rounded-md text-white text-xl font-semibold bg-red-600 px-2 py-1 hover:opacity-80"
             >
                 New Game
